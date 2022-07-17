@@ -46,7 +46,7 @@ stages:
   - job: Deploy
     pool:
       vmImage: 'Windows-Latest'
-
+      environment: Deploy
     steps:
 
     - task: DownloadBuildArtifacts@0
